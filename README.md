@@ -6,16 +6,13 @@
 
 ---
 
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=Tartistbz&show_icons=true&theme=radical" alt="Tartistbz's Stats" />
-    </td>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tartistbz&layout=compact&theme=radical" alt="Top Langs" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./profile-summary-card-output/radical/0-profile-details.svg" alt="Profile Details" />
+</p>
+
+<p align="center">
+  <img src="./profile-summary-card-output/radical/2-most-commit-language.svg" alt="Most Commit Language" />
+</p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Tartistbz&theme=radical" alt="GitHub Streak" />
