@@ -14,7 +14,7 @@ Copied locally at the owner's request. Replace these files if you have your own 
 </p>
 
 <div>
-  <img align="left" src="./assets/profile_pic.jpg" width="300" alt="Anime profile picture" />
+  <img align="left" src="./assets/first.jpg" width="300" alt="Anime profile picture" />
 
 ```text
 Tartistbz@github
@@ -32,7 +32,7 @@ Stack: PX4 / APM / ROS
 <br />
 
 <p align="center">
-  <img src="./assets/anime_gif.gif" alt="Anime eyes animation" width="600" />
+  <img src="./assets/sakiko-togawa-togawa-sakiko.gif" alt="Anime animation" width="600" />
 </p>
 
 <br />
@@ -40,7 +40,7 @@ Stack: PX4 / APM / ROS
 <h2 align="center">CONTACT ME</h2>
 
 <div>
-  <img align="left" src="./assets/contact_pic.jpg" width="300" alt="Anime contact picture" />
+  <img align="left" src="./assets/bandori-bang-dream.gif" width="300" alt="Anime contact picture" />
 
   <p>For project discussions, please reach me by email.</p>
 </div>
