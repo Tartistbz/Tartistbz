@@ -1,87 +1,43 @@
-<!--
-Image source: sleepy-archive/sleepy-archive/assets
-Copied locally at the owner's request. Replace these files if you have your own licensed anime assets.
--->
-
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Cutive+Mono&pause=1000&color=C3B1E1&center=true&vCenter=true&width=900&lines=Welcome+to+Tartistbz%27s+little+room;Drones+%7C+Robotics+%7C+AI+Agents" alt="Typing introduction" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Tartistbz&color=3C3CA0&style=for-the-badge&label=(^///^)" alt="Profile views" />
-</p>
-
-<div>
-  <img align="left" src="./assets/first.jpg" width="300" alt="Anime profile picture" />
-
-```text
-Tartistbz@github
--------------------------
-Name: Tartistbz
-Focus: drones / robotics / AI agents
-Stack: PX4 / APM / ROS
-```
-
-  <br clear="left" />
-
-  <p>Welcome to Tartistbz's little development room. I work on drones, robotics systems, and AI agents.</p>
+<div align="center">
+  <img align="right" src="./assets/first.jpg" width="220" alt="Anime illustration" />
+  <h1>Tartistbz</h1>
+  <p><strong>UAV telemetry tooling · robotics learning · AI-assisted diagnostics</strong></p>
+  <p>I build practical Python tools for PX4 and ArduPilot flight-log analysis.</p>
 </div>
 
-<br />
+<br clear="right" />
+
+## About
+
+My current work focuses on UAV telemetry visualization, flight-diagnosis workflows, and robotics learning. I am especially interested in turning binary flight logs into useful, inspectable engineering evidence.
 
 <p align="center">
-  <img src="./assets/sakiko-togawa-togawa-sakiko.gif" alt="Anime animation" width="600" />
+  <img src="./assets/sakiko-togawa-togawa-sakiko.gif" width="420" alt="Anime animation" />
 </p>
 
-<br />
+## Featured Projects
 
-<h2 align="center">CONTACT ME</h2>
+- [Aero-Analytica](https://github.com/Tartistbz/Aero-Analytica)  
+  Streamlit tool for ArduPilot `.bin` and PX4 `.ulg` logs, dynamic field discovery, interactive time-series charts, and optional LLM-assisted diagnostics. Includes architecture documentation and 36 offline unit tests.
 
-<div>
-  <img align="left" src="./assets/bandori-bang-dream.gif" width="300" alt="Anime contact picture" />
+- [UAV Insight Toolkit](https://github.com/Tartistbz/UAV-Insight-Toolkit)  
+  Telemetry dashboard for vibration analysis, PID rate tracking, 3D trajectory visualization, and AI-assisted reports across PX4 and ArduPilot logs.
 
-  <p>For project discussions, please reach me by email.</p>
-</div>
+## Open-source Contributions
 
-<br clear="left" />
+- [QGroundControl #14862](https://github.com/mavlink/qgroundcontrol/pull/14862) — merged documentation update for Actuators troubleshooting.
+- [ArduPilot wiki #7966](https://github.com/ArduPilot/ardupilot_wiki/pull/7966) — merged correction to DroneCAN pool defaults.
+- [PX4 #28245](https://github.com/PX4/PX4-Autopilot/pull/28245) — open documentation PR clarifying ROS 2 `VehicleCommand` routing.
+- [noop #552](https://github.com/ryanbr/noop/pull/552) — merged Simplified Chinese Android localization.
 
-<p align="center">
-  <a href="mailto:ltxx01514@outlook.com">
-    <img src="https://img.shields.io/badge/EMAIL-ltxx01514%40outlook.com-3C3CA0?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email ltxx01514@outlook.com" />
-  </a>
-</p>
+## Learning
 
-<br />
+- [Motion Planning Notes](https://github.com/Tartistbz/Motion-Planning-Notes) — personal notes on search-based, sampling-based, and kinodynamic planning.
 
-<h2 align="center">GITHUB STATS</h2>
+## Stack
 
-<p align="center">
-  <img src="./profile-summary-card-output/rose_pine/0-profile-details.svg" alt="GitHub profile details" width="100%" />
-</p>
+Python · Streamlit · Plotly · pymavlink · pyulog · PX4 · ArduPilot
 
-<table align="center">
-  <tr>
-    <td width="50%">
-      <img src="./profile-summary-card-output/rose_pine/1-repos-per-language.svg" alt="Top languages by repository" width="100%" />
-    </td>
-    <td width="50%">
-      <img src="./profile-summary-card-output/rose_pine/2-most-commit-language.svg" alt="Top languages by commit" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="./profile-summary-card-output/rose_pine/3-stats.svg" alt="GitHub stats" width="100%" />
-    </td>
-    <td width="50%">
-      <img src="./profile-summary-card-output/rose_pine/4-productive-time.svg" alt="Productive time" width="100%" />
-    </td>
-  </tr>
-</table>
+## Contact
 
-<br />
-
-<p align="center">
-  <sub>Thanks for visiting</sub>
-</p>
+For UAV tooling, robotics software, or open-source collaboration, please open an issue or reach me through GitHub.
