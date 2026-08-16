@@ -1,11 +1,15 @@
-<div align="center">
-  <img align="right" src="./assets/first.jpg" width="220" alt="Anime illustration" />
-  <h1>Tartistbz</h1>
-  <p><strong>UAV telemetry tooling · robotics learning · AI-assisted diagnostics</strong></p>
-  <p>I build practical Python tools for PX4 and ArduPilot flight-log analysis.</p>
-</div>
-
-<br clear="right" />
+<table>
+  <tr>
+    <td valign="middle">
+      <h1>Tartistbz</h1>
+      <p><strong>UAV telemetry tooling · robotics learning · AI-assisted diagnostics</strong></p>
+      <p>I build practical Python tools for PX4 and ArduPilot flight-log analysis.</p>
+    </td>
+    <td align="center" width="220">
+      <img src="./assets/first.jpg" width="180" alt="Anime illustration" />
+    </td>
+  </tr>
+</table>
 
 ## About
 
@@ -41,3 +45,29 @@ Python · Streamlit · Plotly · pymavlink · pyulog · PX4 · ArduPilot
 ## Contact
 
 For UAV tooling, robotics software, or open-source collaboration, please open an issue or reach me through GitHub.
+
+
+## GitHub Stats
+
+<p align="center">
+  <img src="./profile-summary-card-output/rose_pine/0-profile-details.svg" alt="GitHub profile details" width="100%" />
+</p>
+
+<table align="center">
+  <tr>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/1-repos-per-language.svg" alt="Top languages by repository" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/2-most-commit-language.svg" alt="Top languages by commit" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/3-stats.svg" alt="GitHub stats" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/4-productive-time.svg" alt="Productive time" width="100%" />
+    </td>
+  </tr>
+</table>
