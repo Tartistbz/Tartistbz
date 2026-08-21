@@ -90,3 +90,22 @@ For UAV tooling, robotics software, or open-source collaboration, open an issue 
 <img src="./profile-summary-card-output/rose_pine/0-profile-details.svg" alt="GitHub profile details" width="100%" />
 
 </div>
+
+<table align="center">
+  <tr>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/1-repos-per-language.svg" alt="Top languages by repository" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/2-most-commit-language.svg" alt="Top languages by commit" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/3-stats.svg" alt="GitHub statistics" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./profile-summary-card-output/rose_pine/4-productive-time.svg" alt="Productive time" width="100%" />
+    </td>
+  </tr>
+</table>
