@@ -4,31 +4,34 @@
 
 **Robotics software · UAV telemetry · ROS 2 autonomy · open-source engineering**
 
-I build tools and experiments that turn robot data and real hardware behavior into inspectable engineering evidence.
-
-[![GitHub](https://img.shields.io/badge/GitHub-Tartistbz-181717?logo=github)](https://github.com/Tartistbz)
-[![PX4](https://img.shields.io/badge/PX4-flight%20software-00A5D6)](https://px4.io/)
-[![ROS 2](https://img.shields.io/badge/ROS%202-Humble-22314E?logo=ros)](https://docs.ros.org/en/humble/)
-
 </div>
 
-## Current Direction
+<table>
+  <tr>
+    <td valign="top" width="220">
+      <img src="./assets/first.jpg" width="200" alt="Tartistbz profile avatar" />
+    </td>
+    <td valign="top">
 
-My work sits at the intersection of **robotics software, telemetry, and autonomy**.
+I build robotics software that turns sensor data, flight logs, and real hardware behavior into inspectable engineering evidence.
 
-- **UAV systems:** PX4/ArduPilot flight-log analysis, telemetry visualization, diagnostics, and flight-control workflows.
-- **Ground robotics:** ROS 2 mapping, AMCL localization, Nav2 navigation, and mission-level control validated on a real indoor mobile robot.
-- **Next:** safety-aware task interfaces and agent-assisted robotics workflows, with clear boundaries between high-level intent and low-level actuation.
+My current path connects three areas:
 
-I am especially interested in software that can be tested on hardware, explained from its data flow, and improved from recorded evidence.
+- **UAV systems:** PX4/ArduPilot telemetry, flight-log analysis, diagnostics, and flight-control workflows.
+- **Ground robotics:** ROS 2 mapping, AMCL localization, Nav2 navigation, and mission-level control on a real indoor mobile robot.
+- **Agent infrastructure:** practical operator tools and future task interfaces with a clear boundary between high-level intent and low-level actuation.
+
+    </td>
+  </tr>
+</table>
 
 ## Featured Projects
 
 ### [ROS 2 Indoor Patrol](https://github.com/Tartistbz/ros2-indoor-patrol)
 
-Mission-level patrol executive for Nav2 on a LEAP_ROS mobile base. I implemented the ROS 2 Python mission node, YAML waypoint route, sequential `NavigateToPose` actions, bounded retries, timeout/cancellation behavior, operator services, and JSONL event logging. I also performed the map/localization integration, waypoint calibration, and real-robot validation.
+Mission-level patrol executive for Nav2 on a LEAP_ROS mobile base. I implemented the ROS 2 Python mission node, YAML waypoint routes, sequential `NavigateToPose` actions, bounded retries, timeout/cancellation behavior, operator services, and JSONL event logging. I also performed mapping/localization integration, waypoint calibration, and real-robot validation.
 
-**Recorded hardware run:** 8/8 indoor waypoints reached, 0 retries, 186.31 s. The repository documents the attribution boundary: the base, ESP32 firmware, vendor bringup, Nav2, AMCL, and GMapping are reused platform/open-source components.
+**Recorded hardware run:** 8/8 indoor waypoints reached, 0 retries, 186.31 s. The repository clearly separates my mission-layer work from the reused base, ESP32 firmware, vendor bringup, Nav2, AMCL, and GMapping components.
 
 ### [Aero-Analytica](https://github.com/Tartistbz/Aero-Analytica)
 
@@ -38,17 +41,41 @@ Streamlit-based explorer for ArduPilot `.bin` and PX4 `.ulg` logs, with dynamic 
 
 Telemetry dashboard for vibration analysis, PID/rate tracking, 3D trajectory visualization, and AI-assisted reports across PX4 and ArduPilot flight logs.
 
+### [BossConsole](https://github.com/risa-labs-inc/BossConsole)
+
+An open-source, multi-platform operator console for AI coding agents. My contribution fixed a crash path by publishing contained reports atomically: [PR #189](https://github.com/risa-labs-inc/BossConsole/pull/189) was merged.
+
 ## Open-Source Contributions
 
-- [QGroundControl #14862](https://github.com/mavlink/qgroundcontrol/pull/14862) — merged documentation update for actuator troubleshooting.
-- [ArduPilot wiki #7966](https://github.com/ArduPilot/ardupilot_wiki/pull/7966) — merged correction to DroneCAN pool defaults.
-- [PX4 #28245](https://github.com/PX4/PX4-Autopilot/pull/28245) — documentation PR clarifying ROS 2 `VehicleCommand` routing.
-- [noop #552](https://github.com/ryanbr/noop/pull/552) — merged Simplified Chinese Android localization.
+I currently have **8 upstream contribution PRs represented on GitHub: 5 merged, 2 open, and 1 closed without merge**.
 
-## Learning and Experiments
+### Merged
 
-- [Motion Planning Notes](https://github.com/Tartistbz/Motion-Planning-Notes) — search-based, sampling-based, and kinodynamic planning notes.
-- Current hands-on track: Nav2 costmap/controller tuning, repeated-run evaluation, safety supervision, and moving the ROS 2 host from VMware to Raspberry Pi 4B.
+- [ArduPilot wiki #7973](https://github.com/ArduPilot/ardupilot_wiki/pull/7973) — archived legacy ODroid companion-computer pages.
+- [BossConsole #189](https://github.com/risa-labs-inc/BossConsole/pull/189) — fixed atomic publication of contained crash reports.
+- [QGroundControl #14862](https://github.com/mavlink/qgroundcontrol/pull/14862) — added troubleshooting guidance for the missing Actuators tab.
+- [ArduPilot wiki #7966](https://github.com/ArduPilot/ardupilot_wiki/pull/7966) — corrected DroneCAN pool defaults.
+- [noop #552](https://github.com/ryanbr/noop/pull/552) — added Simplified Chinese Android localization.
+
+### Open
+
+- [PX4/px4_ros_com #234](https://github.com/PX4/px4_ros_com/pull/234) — fix `Covariance3d` frame transformation.
+- [PX4-Autopilot #28245](https://github.com/PX4/PX4-Autopilot/pull/28245) — clarify ROS 2 `VehicleCommand` routing.
+
+### Closed, Not Merged
+
+- [PX4-GPSDrivers #227](https://github.com/PX4/PX4-GPSDrivers/pull/227) — convert SBF heading covariance to accuracy.
+
+## Repositories and Learning
+
+- [Motion Planning Notes](https://github.com/Tartistbz/Motion-Planning-Notes) — search-based, sampling-based, and kinodynamic planning for mobile robots.
+- [PX4-GPSDrivers](https://github.com/Tartistbz/PX4-GPSDrivers) — contribution workspace for platform-independent GPS drivers.
+- [px4_ros_com](https://github.com/Tartistbz/px4_ros_com) — PX4 and ROS 2 integration work.
+- [PX4-Autopilot](https://github.com/Tartistbz/PX4-Autopilot) and [ArduPilot wiki](https://github.com/Tartistbz/ardupilot_wiki) — upstream contribution workspaces.
+
+## Current Engineering Track
+
+Nav2 costmap and controller tuning, repeated-run evaluation, safety supervision, onboard deployment on Raspberry Pi 4B, and constrained agent interfaces for robot tasks.
 
 ## Tools I Use
 
