@@ -2,7 +2,7 @@
 
 # Tartistbz
 
-**Robotics software · UAV telemetry · ROS 2 autonomy · open-source engineering**
+**Robotics software · UAV telemetry · ROS 2 autonomy · AI-assisted engineering**
 
 </div>
 
@@ -15,11 +15,11 @@
 
 I build robotics software that turns sensor data, flight logs, and real hardware behavior into inspectable engineering evidence.
 
-My current path connects three areas:
+My current work connects three practical areas:
 
-- **UAV systems:** PX4/ArduPilot telemetry, flight-log analysis, diagnostics, and flight-control workflows.
+- **UAV systems:** PX4 and ArduPilot telemetry, flight-log analysis, diagnostics, and ROS 2 integration.
 - **Ground robotics:** ROS 2 mapping, AMCL localization, Nav2 navigation, and mission-level control on a real indoor mobile robot.
-- **Agent infrastructure:** practical operator tools and future task interfaces with a clear boundary between high-level intent and low-level actuation.
+- **AI-assisted engineering:** reproducible evaluation and repair workflows for robotics and coding tasks.
 
     </td>
   </tr>
@@ -29,53 +29,51 @@ My current path connects three areas:
 
 ### [ROS 2 Indoor Patrol](https://github.com/Tartistbz/ros2-indoor-patrol)
 
-Mission-level patrol executive for Nav2 on a LEAP_ROS mobile base. I implemented the ROS 2 Python mission node, YAML waypoint routes, sequential `NavigateToPose` actions, bounded retries, timeout/cancellation behavior, operator services, and JSONL event logging. I also performed mapping/localization integration, waypoint calibration, and real-robot validation.
+Mission-level patrol and exploration overlay for Nav2 on a LEAP_ROS mobile base. I implemented the ROS 2 mission node, YAML waypoint routes, sequential `NavigateToPose` actions, bounded retries, timeout and cancellation behavior, operator services, JSONL event logging, and the experimental SE(2) B-spline controller.
 
-**Recorded hardware run:** 8/8 indoor waypoints reached, 0 retries, 186.31 s. The repository clearly separates my mission-layer work from the reused base, ESP32 firmware, vendor bringup, Nav2, AMCL, and GMapping components.
+The repository records one reviewed hardware-in-the-loop run: **8/8 indoor waypoints reached, 0 retries, 186.31 s**. The README documents the boundary between my mission-layer work and reused base, vendor bringup, Nav2, AMCL, SLAM, and firmware components.
 
 ### [Aero-Analytica](https://github.com/Tartistbz/Aero-Analytica)
 
-Streamlit-based explorer for ArduPilot `.bin` and PX4 `.ulg` logs, with dynamic field discovery, interactive time-series plots, and optional LLM-assisted diagnostic reports. Includes architecture documentation and offline tests for the analysis pipeline.
+Streamlit-based explorer for ArduPilot `.bin` and PX4 `.ulg` logs, with dynamic field discovery, interactive time-series plots, and optional LLM-assisted diagnostic reports. Recent work adds a RepoPilot evaluation harness, reproducible robotics fixtures, and a guided code-repair workspace.
 
 ### [UAV Insight Toolkit](https://github.com/Tartistbz/UAV-Insight-Toolkit)
 
 Telemetry dashboard for vibration analysis, PID/rate tracking, 3D trajectory visualization, and AI-assisted reports across PX4 and ArduPilot flight logs.
 
-### [BossConsole](https://github.com/risa-labs-inc/BossConsole)
-
-An open-source, multi-platform operator console for AI coding agents. My contribution fixed a crash path by publishing contained reports atomically: [PR #189](https://github.com/risa-labs-inc/BossConsole/pull/189) was merged.
-
 ## Open-Source Contributions
 
-I currently have **8 upstream contribution PRs represented on GitHub: 5 merged, 2 open, and 1 closed without merge**.
+As of 2026-08-26, I have **13 PRs targeting external repositories: 5 merged, 7 open, and 1 closed without merge**.
 
 ### Merged
 
-- [ArduPilot wiki #7973](https://github.com/ArduPilot/ardupilot_wiki/pull/7973) — archived legacy ODroid companion-computer pages.
-- [BossConsole #189](https://github.com/risa-labs-inc/BossConsole/pull/189) — fixed atomic publication of contained crash reports.
-- [QGroundControl #14862](https://github.com/mavlink/qgroundcontrol/pull/14862) — added troubleshooting guidance for the missing Actuators tab.
-- [ArduPilot wiki #7966](https://github.com/ArduPilot/ardupilot_wiki/pull/7966) — corrected DroneCAN pool defaults.
-- [noop #552](https://github.com/ryanbr/noop/pull/552) — added Simplified Chinese Android localization.
+- [ArduPilot wiki #7973](https://github.com/ArduPilot/ardupilot_wiki/pull/7973) - archived legacy ODroid companion-computer pages.
+- [BossConsole #189](https://github.com/risa-labs-inc/BossConsole/pull/189) - fixed atomic publication of contained crash reports.
+- [QGroundControl #14862](https://github.com/mavlink/qgroundcontrol/pull/14862) - added troubleshooting guidance for the missing Actuators tab.
+- [ArduPilot wiki #7966](https://github.com/ArduPilot/ardupilot_wiki/pull/7966) - corrected DroneCAN pool defaults.
+- [noop #552](https://github.com/ryanbr/noop/pull/552) - added Simplified Chinese Android localization.
 
 ### Open
 
-- [PX4/px4_ros_com #234](https://github.com/PX4/px4_ros_com/pull/234) — fix `Covariance3d` frame transformation.
-- [PX4-Autopilot #28245](https://github.com/PX4/PX4-Autopilot/pull/28245) — clarify ROS 2 `VehicleCommand` routing.
+- [PX4-Autopilot #28245](https://github.com/PX4/PX4-Autopilot/pull/28245) - clarified ROS 2 `VehicleCommand` routing.
+- [PX4-Autopilot #28338](https://github.com/PX4/PX4-Autopilot/pull/28338) - aligned SITL and hardware UXRCE-DDS namespace conventions.
+- [PX4-Autopilot #28339](https://github.com/PX4/PX4-Autopilot/pull/28339) - restored Gazebo fallback targets when dependencies are unavailable.
+- [PX4/px4_ros_com #234](https://github.com/PX4/px4_ros_com/pull/234) - fixed `Covariance3d` frame transformation and added regression coverage.
+- [DeepSeek-Reasonix #9282](https://github.com/esengine/DeepSeek-Reasonix/pull/9282) - added per-model tool capability configuration.
+- [DeepSeek-Reasonix #9283](https://github.com/esengine/DeepSeek-Reasonix/pull/9283) - allowed Git worktree metadata writes in the sandbox.
+- [DeepSeek-Reasonix #9284](https://github.com/esengine/DeepSeek-Reasonix/pull/9284) - documented file-grained write paths and added regression coverage.
 
 ### Closed, Not Merged
 
-- [PX4-GPSDrivers #227](https://github.com/PX4/PX4-GPSDrivers/pull/227) — convert SBF heading covariance to accuracy.
+- [PX4-GPSDrivers #227](https://github.com/PX4/PX4-GPSDrivers/pull/227) - converted SBF heading covariance to accuracy.
 
-## Repositories and Learning
+## Learning
 
-- [Motion Planning Notes](https://github.com/Tartistbz/Motion-Planning-Notes) — search-based, sampling-based, and kinodynamic planning for mobile robots.
-- [PX4-GPSDrivers](https://github.com/Tartistbz/PX4-GPSDrivers) — contribution workspace for platform-independent GPS drivers.
-- [px4_ros_com](https://github.com/Tartistbz/px4_ros_com) — PX4 and ROS 2 integration work.
-- [PX4-Autopilot](https://github.com/Tartistbz/PX4-Autopilot) and [ArduPilot wiki](https://github.com/Tartistbz/ardupilot_wiki) — upstream contribution workspaces.
+- [Motion Planning Notes](https://github.com/Tartistbz/Motion-Planning-Notes) - search-based, sampling-based, and kinodynamic planning for mobile robots.
 
 ## Current Engineering Track
 
-Nav2 costmap and controller tuning, repeated-run evaluation, safety supervision, onboard deployment on Raspberry Pi 4B, and constrained agent interfaces for robot tasks.
+Nav2 controller and costmap tuning, online mapping and frontier exploration, repeated-run evaluation, Raspberry Pi 4B deployment, PX4/ROS 2 integration, and constrained interfaces for agent-assisted robot tasks.
 
 ## Tools I Use
 
@@ -83,7 +81,9 @@ Nav2 costmap and controller tuning, repeated-run evaluation, safety supervision,
 
 ## Contact
 
-For UAV tooling, robotics software, or open-source collaboration, open an issue or reach me through [GitHub](https://github.com/Tartistbz).
+For robotics software, UAV tooling, or open-source collaboration, open an issue or reach me through [GitHub](https://github.com/Tartistbz).
+
+## GitHub Stats
 
 <div align="center">
 
