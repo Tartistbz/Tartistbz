@@ -35,7 +35,11 @@ The repository records one reviewed hardware-in-the-loop run: **8/8 indoor waypo
 
 ### [Aero-Analytica](https://github.com/Tartistbz/Aero-Analytica)
 
-Streamlit-based explorer for ArduPilot `.bin` and PX4 `.ulg` logs, with dynamic field discovery, interactive time-series plots, and optional LLM-assisted diagnostic reports. Recent work adds a RepoPilot evaluation harness, reproducible robotics fixtures, and a guided code-repair workspace.
+A Streamlit-based flight-log analysis workspace for ArduPilot `.bin` and PX4 `.ulg` files. It uses `pymavlink` and `pyulog` to discover the messages, topics, and fields actually present in each log, then aligns selected signals into interactive Plotly time-series views with dual axes, range controls, and flight-mode context.
+
+Users can select fields manually or ask an LLM to recommend relevant signals. Its two-stage `Dispatcher` / `Analyst` workflow generates diagnostic reports from field metadata, statistical summaries, and sampled time-series data, while raw logs remain local.
+
+Recent work adds a RepoPilot evaluation harness, reproducible robotics fixtures, guided code-repair workflows, and Windows portable packaging. The repository also includes architecture documentation and 36 offline unit tests.
 
 ### [UAV Insight Toolkit](https://github.com/Tartistbz/UAV-Insight-Toolkit)
 
